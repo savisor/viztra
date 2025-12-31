@@ -29,3 +29,9 @@ export interface OHLCData {
   close: number; // Closing price
 }
 
+// Asset operation result type
+export interface AssetOperationResult {
+  success: boolean;
+  message: string;
+}
+
