@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.select {
+  font-family: "JetBrains Mono", monospace;
+  font-size: var(--font-size-lg);
+  color: var(--text-primary);
+  background-color: var(--background-hover);
+  border: 1px solid var(--background-active);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23999' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right var(--space-2) center;
+  background-size: 12px;
+  padding-right: var(--space-6);
+  min-width: 120px;
+}
+
+.select:focus {
+  outline: none;
+  border-color: var(--background-active);
+}
+
+.select:hover {
+  border-color: var(--background-active);
+}
+
+.display {
+  font-family: "JetBrains Mono", monospace;
+  font-size: var(--font-size-lg);
+  color: var(--text-tertiary);
+  white-space: nowrap;
+}
+

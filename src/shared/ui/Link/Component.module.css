@@ -1,0 +1,166 @@
+/* Base link styles */
+.link {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.link-text {
+  position: relative;
+}
+
+.badge {
+  color: var(--text-tertiary);
+  font-size: 0.875em;
+}
+
+.external-icon {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.link:hover .external-icon {
+  opacity: 1;
+}
+
+/* Button variant - original card-style link */
+.link-button {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background-color: var(--background-hover);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--background-active);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  overflow: hidden;
+  gap: 0;
+}
+
+.link-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    var(--neon-cyan) 0%,
+    var(--neon-purple) 50%,
+    var(--neon-magenta) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+  background-size: 200% 200%;
+  animation: none;
+}
+
+.link-button:hover::before {
+  opacity: 0.1;
+  animation: gradientShift 4s ease infinite;
+}
+
+.link-button:hover {
+  background-color: var(--background-active);
+  border-color: var(--neon-cyan-border);
+  color: var(--text-primary);
+  box-shadow: 0 0 10px var(--neon-cyan-shadow),
+    0 0 20px var(--neon-purple-shadow);
+}
+
+.link-button[data-active="true"] {
+  background-color: var(--background-active);
+  border-color: var(--neon-cyan-border);
+  color: var(--text-primary);
+  box-shadow: 0 0 10px var(--neon-cyan-shadow),
+    0 0 20px var(--neon-purple-shadow);
+}
+
+.link-button[data-active="true"]::before {
+  opacity: 0.15;
+  animation: gradientShift 4s ease infinite;
+}
+
+.link-button > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Navigation variant - horizontal text links */
+.link-nav {
+  color: var(--text-secondary);
+  padding: 0.5rem 0;
+  background: none;
+  border: none;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.link-nav .link-text {
+  position: relative;
+  color: inherit;
+}
+
+.link-nav .link-text::after {
+  content: "";
+  position: absolute;
+  bottom: -0.25rem;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--text-primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.link-nav:hover {
+  color: var(--text-primary);
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.link-nav:hover .link-text::after {
+  transform: scaleX(1);
+}
+
+.link-nav[data-active="true"] {
+  color: var(--text-primary);
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.link-nav[data-active="true"] .link-text::after {
+  transform: scaleX(1);
+}
+
+.link-nav::before {
+  display: none;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

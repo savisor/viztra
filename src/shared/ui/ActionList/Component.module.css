@@ -1,0 +1,16 @@
+.action-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.action-list-item {
+  display: flex;
+  padding: 0 0 0 var(--space-2);
+}
+
+.action-list-bullet {
+  color: var(--text-tertiary);
+  margin-right: var(--space-2);
+}
+

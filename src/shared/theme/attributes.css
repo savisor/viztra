@@ -1,0 +1,629 @@
+/* Padding utilities - directly applies padding */
+[data-padding="0"] {
+  padding: var(--space-0);
+}
+
+[data-padding="1"] {
+  padding: var(--space-1);
+}
+
+[data-padding="2"] {
+  padding: var(--space-2);
+}
+
+[data-padding="3"] {
+  padding: var(--space-3);
+}
+
+[data-padding="4"] {
+  padding: var(--space-4);
+}
+
+[data-padding="5"] {
+  padding: var(--space-5);
+}
+
+[data-padding="6"] {
+  padding: var(--space-6);
+}
+
+[data-padding="8"] {
+  padding: var(--space-8);
+}
+
+[data-padding="12"] {
+  padding: var(--space-12);
+}
+
+[data-padding="16"] {
+  padding: var(--space-16);
+}
+
+[data-padding="20"] {
+  padding: var(--space-20);
+}
+
+[data-padding="24"] {
+  padding: var(--space-24);
+}
+
+[data-padding="32"] {
+  padding: var(--space-32);
+}
+
+[data-padding="40"] {
+  padding: var(--space-40);
+}
+
+[data-padding="48"] {
+  padding: var(--space-48);
+}
+
+/* Padding inline utilities - applies padding to inline axis (left/right) */
+[data-padding-inline="0"] {
+  padding-inline: var(--space-0);
+}
+
+[data-padding-inline="1"] {
+  padding-inline: var(--space-1);
+}
+
+[data-padding-inline="2"] {
+  padding-inline: var(--space-2);
+}
+
+[data-padding-inline="3"] {
+  padding-inline: var(--space-3);
+}
+
+[data-padding-inline="4"] {
+  padding-inline: var(--space-4);
+}
+
+[data-padding-inline="5"] {
+  padding-inline: var(--space-5);
+}
+
+[data-padding-inline="6"] {
+  padding-inline: var(--space-6);
+}
+
+[data-padding-inline="8"] {
+  padding-inline: var(--space-8);
+}
+
+[data-padding-inline="12"] {
+  padding-inline: var(--space-12);
+}
+
+[data-padding-inline="16"] {
+  padding-inline: var(--space-16);
+}
+
+[data-padding-inline="20"] {
+  padding-inline: var(--space-20);
+}
+
+[data-padding-inline="24"] {
+  padding-inline: var(--space-24);
+}
+
+[data-padding-inline="32"] {
+  padding-inline: var(--space-32);
+}
+
+[data-padding-inline="40"] {
+  padding-inline: var(--space-40);
+}
+
+[data-padding-inline="48"] {
+  padding-inline: var(--space-48);
+}
+
+/* Padding block utilities - applies padding to block axis (top/bottom) */
+[data-padding-block="0"] {
+  padding-block: var(--space-0);
+}
+
+[data-padding-block="1"] {
+  padding-block: var(--space-1);
+}
+
+[data-padding-block="2"] {
+  padding-block: var(--space-2);
+}
+
+[data-padding-block="3"] {
+  padding-block: var(--space-3);
+}
+
+[data-padding-block="4"] {
+  padding-block: var(--space-4);
+}
+
+[data-padding-block="5"] {
+  padding-block: var(--space-5);
+}
+
+[data-padding-block="6"] {
+  padding-block: var(--space-6);
+}
+
+[data-padding-block="8"] {
+  padding-block: var(--space-8);
+}
+
+[data-padding-block="12"] {
+  padding-block: var(--space-12);
+}
+
+[data-padding-block="16"] {
+  padding-block: var(--space-16);
+}
+
+[data-padding-block="20"] {
+  padding-block: var(--space-20);
+}
+
+[data-padding-block="24"] {
+  padding-block: var(--space-24);
+}
+
+[data-padding-block="32"] {
+  padding-block: var(--space-32);
+}
+
+[data-padding-block="40"] {
+  padding-block: var(--space-40);
+}
+
+[data-padding-block="48"] {
+  padding-block: var(--space-48);
+}
+
+/* Gap utilities - directly applies gap */
+[data-gap="0"] {
+  gap: var(--space-0);
+}
+
+[data-gap="1"] {
+  gap: var(--space-1);
+}
+
+[data-gap="2"] {
+  gap: var(--space-2);
+}
+
+[data-gap="3"] {
+  gap: var(--space-3);
+}
+
+[data-gap="4"] {
+  gap: var(--space-4);
+}
+
+[data-gap="5"] {
+  gap: var(--space-5);
+}
+
+[data-gap="6"] {
+  gap: var(--space-6);
+}
+
+[data-gap="8"] {
+  gap: var(--space-8);
+}
+
+[data-gap="12"] {
+  gap: var(--space-12);
+}
+
+[data-gap="16"] {
+  gap: var(--space-16);
+}
+
+[data-gap="20"] {
+  gap: var(--space-20);
+}
+
+[data-gap="24"] {
+  gap: var(--space-24);
+}
+
+[data-gap="32"] {
+  gap: var(--space-32);
+}
+
+[data-gap="40"] {
+  gap: var(--space-40);
+}
+
+[data-gap="48"] {
+  gap: var(--space-48);
+}
+
+/* Margin utilities - directly applies margin */
+[data-margin="0"] {
+  margin: var(--space-0);
+}
+
+[data-margin="1"] {
+  margin: var(--space-1);
+}
+
+[data-margin="2"] {
+  margin: var(--space-2);
+}
+
+[data-margin="3"] {
+  margin: var(--space-3);
+}
+
+[data-margin="4"] {
+  margin: var(--space-4);
+}
+
+[data-margin="5"] {
+  margin: var(--space-5);
+}
+
+[data-margin="6"] {
+  margin: var(--space-6);
+}
+
+[data-margin="8"] {
+  margin: var(--space-8);
+}
+
+[data-margin="12"] {
+  margin: var(--space-12);
+}
+
+[data-margin="16"] {
+  margin: var(--space-16);
+}
+
+[data-margin="20"] {
+  margin: var(--space-20);
+}
+
+[data-margin="24"] {
+  margin: var(--space-24);
+}
+
+[data-margin="32"] {
+  margin: var(--space-32);
+}
+
+[data-margin="40"] {
+  margin: var(--space-40);
+}
+
+[data-margin="48"] {
+  margin: var(--space-48);
+}
+
+/* Margin inline utilities - applies margin to inline axis (left/right) */
+[data-margin-inline="0"] {
+  margin-inline: var(--space-0);
+}
+
+[data-margin-inline="1"] {
+  margin-inline: var(--space-1);
+}
+
+[data-margin-inline="2"] {
+  margin-inline: var(--space-2);
+}
+
+[data-margin-inline="3"] {
+  margin-inline: var(--space-3);
+}
+
+[data-margin-inline="4"] {
+  margin-inline: var(--space-4);
+}
+
+[data-margin-inline="5"] {
+  margin-inline: var(--space-5);
+}
+
+[data-margin-inline="6"] {
+  margin-inline: var(--space-6);
+}
+
+[data-margin-inline="8"] {
+  margin-inline: var(--space-8);
+}
+
+[data-margin-inline="12"] {
+  margin-inline: var(--space-12);
+}
+
+[data-margin-inline="16"] {
+  margin-inline: var(--space-16);
+}
+
+[data-margin-inline="20"] {
+  margin-inline: var(--space-20);
+}
+
+[data-margin-inline="24"] {
+  margin-inline: var(--space-24);
+}
+
+[data-margin-inline="32"] {
+  margin-inline: var(--space-32);
+}
+
+[data-margin-inline="40"] {
+  margin-inline: var(--space-40);
+}
+
+[data-margin-inline="48"] {
+  margin-inline: var(--space-48);
+}
+
+/* Margin block utilities - applies margin to block axis (top/bottom) */
+[data-margin-block="0"] {
+  margin-block: var(--space-0);
+}
+
+[data-margin-block="1"] {
+  margin-block: var(--space-1);
+}
+
+[data-margin-block="2"] {
+  margin-block: var(--space-2);
+}
+
+[data-margin-block="3"] {
+  margin-block: var(--space-3);
+}
+
+[data-margin-block="4"] {
+  margin-block: var(--space-4);
+}
+
+[data-margin-block="5"] {
+  margin-block: var(--space-5);
+}
+
+[data-margin-block="6"] {
+  margin-block: var(--space-6);
+}
+
+[data-margin-block="8"] {
+  margin-block: var(--space-8);
+}
+
+[data-margin-block="12"] {
+  margin-block: var(--space-12);
+}
+
+[data-margin-block="16"] {
+  margin-block: var(--space-16);
+}
+
+[data-margin-block="20"] {
+  margin-block: var(--space-20);
+}
+
+[data-margin-block="24"] {
+  margin-block: var(--space-24);
+}
+
+[data-margin-block="32"] {
+  margin-block: var(--space-32);
+}
+
+[data-margin-block="40"] {
+  margin-block: var(--space-40);
+}
+
+[data-margin-block="48"] {
+  margin-block: var(--space-48);
+}
+
+/* Direction utilities - sets display and flex-direction */
+
+[data-direction="horizontal"] {
+  display: flex;
+  flex-direction: row;
+}
+
+[data-direction="vertical"] {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inline align utilities - applies justify-content (main axis alignment) */
+[data-inline-align="start"] {
+  justify-content: flex-start;
+}
+
+[data-inline-align="end"] {
+  justify-content: flex-end;
+}
+
+[data-inline-align="center"] {
+  justify-content: center;
+}
+
+[data-inline-align="space-between"] {
+  justify-content: space-between;
+}
+
+[data-inline-align="space-around"] {
+  justify-content: space-around;
+}
+
+[data-inline-align="space-evenly"] {
+  justify-content: space-evenly;
+}
+
+[data-inline-align="stretch"] {
+  justify-content: stretch;
+}
+
+/* Block align utilities - applies align-items (cross axis alignment) */
+[data-block-align="start"] {
+  align-items: flex-start;
+}
+
+[data-block-align="end"] {
+  align-items: flex-end;
+}
+
+[data-block-align="center"] {
+  align-items: center;
+}
+
+[data-block-align="stretch"] {
+  align-items: stretch;
+}
+
+[data-block-align="baseline"] {
+  align-items: baseline;
+}
+
+/* Shape utilities - directly applies border-radius */
+
+[data-shape="none"] {
+  border-radius: var(--radius-none);
+}
+
+[data-shape="xs"] {
+  border-radius: var(--radius-xs);
+}
+
+[data-shape="sm"] {
+  border-radius: var(--radius-sm);
+}
+
+[data-shape="base"] {
+  border-radius: var(--radius-base);
+}
+
+[data-shape="md"] {
+  border-radius: var(--radius-md);
+}
+
+[data-shape="lg"] {
+  border-radius: var(--radius-lg);
+}
+
+[data-shape="xl"] {
+  border-radius: var(--radius-xl);
+}
+
+[data-shape="2xl"] {
+  border-radius: var(--radius-2xl);
+}
+
+[data-shape="3xl"] {
+  border-radius: var(--radius-3xl);
+}
+
+[data-shape="full"] {
+  border-radius: var(--radius-full);
+}
+
+/* Bordered utilities - applies borders */
+
+/* None: Removes all borders */
+[data-bordered="none"] {
+  border: none;
+}
+
+/* All Borders: Applies uniform borders to every side */
+[data-bordered="full"] {
+  border: 1px solid var(--background-active);
+}
+
+/* Outside Borders: Adds borders only to the outer edges */
+[data-bordered="outside"] {
+  border-top: 1px solid var(--background-active);
+  border-right: 1px solid var(--background-active);
+  border-bottom: 1px solid var(--background-active);
+  border-left: 1px solid var(--background-active);
+}
+
+/* Inside Borders: Applies borders solely to internal lines between children */
+/* For horizontal direction (columns): vertical lines between columns */
+[data-bordered="inside"][data-direction="horizontal"] > *:not(:first-child) {
+  border-left: 1px solid var(--background-active);
+}
+
+/* For horizontal direction with wrapping: add top borders for all items except first */
+/* This creates dividers between rows when items wrap to new lines */
+/* The first item won't have a top border, so the first row is clean */
+[data-bordered="inside"][data-direction="horizontal"] > *:not(:first-child) {
+  border-top: 1px solid var(--background-active);
+}
+
+/* For vertical direction (rows): horizontal lines between rows */
+[data-bordered="inside"][data-direction="vertical"] > *:not(:first-child) {
+  border-top: 1px solid var(--background-active);
+}
+
+/* Fallback: if no direction specified, default to vertical (rows) */
+[data-bordered="inside"]:not([data-direction]) > *:not(:first-child) {
+  border-top: 1px solid var(--background-active);
+}
+
+/* Top Border: Adds a border line only to the top edge */
+[data-bordered="top"] {
+  border-top: 1px solid var(--background-active);
+}
+
+/* Bottom Border: Adds a border line only to the bottom edge */
+[data-bordered="bottom"] {
+  border-bottom: 1px solid var(--background-active);
+}
+
+/* Left Border: Adds a border line only to the left edge */
+[data-bordered="left"] {
+  border-left: 1px solid var(--background-active);
+}
+
+/* Right Border: Adds a border line only to the right edge */
+[data-bordered="right"] {
+  border-right: 1px solid var(--background-active);
+}
+
+/* Inline Borders: Applies borders to left and right (inline axis) */
+[data-bordered="inline"] {
+  border-left: 1px solid var(--background-active);
+  border-right: 1px solid var(--background-active);
+}
+
+/* Block Borders: Applies borders to top and bottom (block axis) */
+[data-bordered="block"] {
+  border-top: 1px solid var(--background-active);
+  border-bottom: 1px solid var(--background-active);
+}
+
+/* Top Inline Borders: Top, left, and right borders */
+[data-bordered="top-inline"] {
+  border-top: 1px solid var(--background-active);
+  border-right: 1px solid var(--background-active);
+  border-left: 1px solid var(--background-active);
+}
+
+/* Bottom Inline Borders: Bottom, left, and right borders */
+[data-bordered="bottom-inline"] {
+  border-right: 1px solid var(--background-active);
+  border-left: 1px solid var(--background-active);
+  border-bottom: 1px solid var(--background-active);
+}
+
+/* Inside Horizontal Border: Targets only horizontal lines between rows */
+[data-bordered="inside-horizontal"] > *:not(:first-child) {
+  border-top: 1px solid var(--background-active);
+}
+
+/* Inside Vertical Border: Targets only vertical lines between columns */
+[data-bordered="inside-vertical"] > *:not(:first-child) {
+  border-left: 1px solid var(--background-active);
+}

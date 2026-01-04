@@ -1,0 +1,58 @@
+.card {
+  position: relative;
+  background-color: var(--background-hover);
+  border: 1px solid var(--background-active);
+  color: var(--text-secondary);
+  font-size: var(--font-size-lg);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    var(--neon-cyan) 0%,
+    var(--neon-purple) 50%,
+    var(--neon-magenta) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+  background-size: 200% 200%;
+  animation: none;
+}
+
+.card:hover::before {
+  opacity: 0.06;
+  animation: gradientShift 4s ease infinite;
+}
+
+.card:hover {
+  border-color: var(--neon-cyan-border);
+  box-shadow: 0 0 20px var(--neon-cyan-shadow),
+    0 0 40px var(--neon-purple-shadow);
+}
+
+.card > * {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

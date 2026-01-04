@@ -1,0 +1,546 @@
+/* Scale on Mount Animation */
+@keyframes scaleOnMount {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Neon Gradient Animation - Hover */
+@keyframes neonGradientHover {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* Neon Gradient Animation - Active */
+@keyframes neonGradientActive {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* Apply animation to elements with data-animation="scale-on-mount" */
+[data-animation="scale-on-mount"] {
+  --animation-duration-value: 300ms;
+  --animation-delay-value: 0ms;
+  animation: scaleOnMount var(--animation-duration-value) var(--easing-ease-out);
+  animation-delay: var(--animation-delay-value);
+  animation-fill-mode: both;
+}
+
+/* ============================================
+   Animation Duration Modifiers
+   Works with any animation type
+   ============================================ */
+
+/* Duration - Numeric values (0-6000ms) */
+[data-animation-duration="0"] {
+  --animation-duration-value: 0ms;
+}
+
+[data-animation-duration="100"] {
+  --animation-duration-value: 100ms;
+}
+
+[data-animation-duration="200"] {
+  --animation-duration-value: 200ms;
+}
+
+[data-animation-duration="300"] {
+  --animation-duration-value: 300ms;
+}
+
+[data-animation-duration="400"] {
+  --animation-duration-value: 400ms;
+}
+
+[data-animation-duration="500"] {
+  --animation-duration-value: 500ms;
+}
+
+[data-animation-duration="600"] {
+  --animation-duration-value: 600ms;
+}
+
+[data-animation-duration="700"] {
+  --animation-duration-value: 700ms;
+}
+
+[data-animation-duration="800"] {
+  --animation-duration-value: 800ms;
+}
+
+[data-animation-duration="900"] {
+  --animation-duration-value: 900ms;
+}
+
+[data-animation-duration="1000"] {
+  --animation-duration-value: 1000ms;
+}
+
+[data-animation-duration="1100"] {
+  --animation-duration-value: 1100ms;
+}
+
+[data-animation-duration="1200"] {
+  --animation-duration-value: 1200ms;
+}
+
+[data-animation-duration="1300"] {
+  --animation-duration-value: 1300ms;
+}
+
+[data-animation-duration="1400"] {
+  --animation-duration-value: 1400ms;
+}
+
+[data-animation-duration="1500"] {
+  --animation-duration-value: 1500ms;
+}
+
+[data-animation-duration="1600"] {
+  --animation-duration-value: 1600ms;
+}
+
+[data-animation-duration="1700"] {
+  --animation-duration-value: 1700ms;
+}
+
+[data-animation-duration="1800"] {
+  --animation-duration-value: 1800ms;
+}
+
+[data-animation-duration="1900"] {
+  --animation-duration-value: 1900ms;
+}
+
+[data-animation-duration="2000"] {
+  --animation-duration-value: 2000ms;
+}
+
+[data-animation-duration="2100"] {
+  --animation-duration-value: 2100ms;
+}
+
+[data-animation-duration="2200"] {
+  --animation-duration-value: 2200ms;
+}
+
+[data-animation-duration="2300"] {
+  --animation-duration-value: 2300ms;
+}
+
+[data-animation-duration="2400"] {
+  --animation-duration-value: 2400ms;
+}
+
+[data-animation-duration="2500"] {
+  --animation-duration-value: 2500ms;
+}
+
+[data-animation-duration="2600"] {
+  --animation-duration-value: 2600ms;
+}
+
+[data-animation-duration="2700"] {
+  --animation-duration-value: 2700ms;
+}
+
+[data-animation-duration="2800"] {
+  --animation-duration-value: 2800ms;
+}
+
+[data-animation-duration="2900"] {
+  --animation-duration-value: 2900ms;
+}
+
+[data-animation-duration="3000"] {
+  --animation-duration-value: 3000ms;
+}
+
+[data-animation-duration="3100"] {
+  --animation-duration-value: 3100ms;
+}
+
+[data-animation-duration="3200"] {
+  --animation-duration-value: 3200ms;
+}
+
+[data-animation-duration="3300"] {
+  --animation-duration-value: 3300ms;
+}
+
+[data-animation-duration="3400"] {
+  --animation-duration-value: 3400ms;
+}
+
+[data-animation-duration="3500"] {
+  --animation-duration-value: 3500ms;
+}
+
+[data-animation-duration="3600"] {
+  --animation-duration-value: 3600ms;
+}
+
+[data-animation-duration="3700"] {
+  --animation-duration-value: 3700ms;
+}
+
+[data-animation-duration="3800"] {
+  --animation-duration-value: 3800ms;
+}
+
+[data-animation-duration="3900"] {
+  --animation-duration-value: 3900ms;
+}
+
+[data-animation-duration="4000"] {
+  --animation-duration-value: 4000ms;
+}
+
+[data-animation-duration="4100"] {
+  --animation-duration-value: 4100ms;
+}
+
+[data-animation-duration="4200"] {
+  --animation-duration-value: 4200ms;
+}
+
+[data-animation-duration="4300"] {
+  --animation-duration-value: 4300ms;
+}
+
+[data-animation-duration="4400"] {
+  --animation-duration-value: 4400ms;
+}
+
+[data-animation-duration="4500"] {
+  --animation-duration-value: 4500ms;
+}
+
+[data-animation-duration="4600"] {
+  --animation-duration-value: 4600ms;
+}
+
+[data-animation-duration="4700"] {
+  --animation-duration-value: 4700ms;
+}
+
+[data-animation-duration="4800"] {
+  --animation-duration-value: 4800ms;
+}
+
+[data-animation-duration="4900"] {
+  --animation-duration-value: 4900ms;
+}
+
+[data-animation-duration="5000"] {
+  --animation-duration-value: 5000ms;
+}
+
+[data-animation-duration="5100"] {
+  --animation-duration-value: 5100ms;
+}
+
+[data-animation-duration="5200"] {
+  --animation-duration-value: 5200ms;
+}
+
+[data-animation-duration="5300"] {
+  --animation-duration-value: 5300ms;
+}
+
+[data-animation-duration="5400"] {
+  --animation-duration-value: 5400ms;
+}
+
+[data-animation-duration="5500"] {
+  --animation-duration-value: 5500ms;
+}
+
+[data-animation-duration="5600"] {
+  --animation-duration-value: 5600ms;
+}
+
+[data-animation-duration="5700"] {
+  --animation-duration-value: 5700ms;
+}
+
+[data-animation-duration="5800"] {
+  --animation-duration-value: 5800ms;
+}
+
+[data-animation-duration="5900"] {
+  --animation-duration-value: 5900ms;
+}
+
+[data-animation-duration="6000"] {
+  --animation-duration-value: 6000ms;
+}
+
+/* ============================================
+   Animation Delay Modifiers
+   Works with any animation type
+   ============================================ */
+
+/* Delay - Numeric values (0-6000ms) */
+[data-animation-delay="0"] {
+  --animation-delay-value: 0ms;
+}
+
+[data-animation-delay="100"] {
+  --animation-delay-value: 100ms;
+}
+
+[data-animation-delay="200"] {
+  --animation-delay-value: 200ms;
+}
+
+[data-animation-delay="300"] {
+  --animation-delay-value: 300ms;
+}
+
+[data-animation-delay="400"] {
+  --animation-delay-value: 400ms;
+}
+
+[data-animation-delay="500"] {
+  --animation-delay-value: 500ms;
+}
+
+[data-animation-delay="600"] {
+  --animation-delay-value: 600ms;
+}
+
+[data-animation-delay="700"] {
+  --animation-delay-value: 700ms;
+}
+
+[data-animation-delay="800"] {
+  --animation-delay-value: 800ms;
+}
+
+[data-animation-delay="900"] {
+  --animation-delay-value: 900ms;
+}
+
+[data-animation-delay="1000"] {
+  --animation-delay-value: 1000ms;
+}
+
+[data-animation-delay="1100"] {
+  --animation-delay-value: 1100ms;
+}
+
+[data-animation-delay="1200"] {
+  --animation-delay-value: 1200ms;
+}
+
+[data-animation-delay="1300"] {
+  --animation-delay-value: 1300ms;
+}
+
+[data-animation-delay="1400"] {
+  --animation-delay-value: 1400ms;
+}
+
+[data-animation-delay="1500"] {
+  --animation-delay-value: 1500ms;
+}
+
+[data-animation-delay="1600"] {
+  --animation-delay-value: 1600ms;
+}
+
+[data-animation-delay="1700"] {
+  --animation-delay-value: 1700ms;
+}
+
+[data-animation-delay="1800"] {
+  --animation-delay-value: 1800ms;
+}
+
+[data-animation-delay="1900"] {
+  --animation-delay-value: 1900ms;
+}
+
+[data-animation-delay="2000"] {
+  --animation-delay-value: 2000ms;
+}
+
+[data-animation-delay="2100"] {
+  --animation-delay-value: 2100ms;
+}
+
+[data-animation-delay="2200"] {
+  --animation-delay-value: 2200ms;
+}
+
+[data-animation-delay="2300"] {
+  --animation-delay-value: 2300ms;
+}
+
+[data-animation-delay="2400"] {
+  --animation-delay-value: 2400ms;
+}
+
+[data-animation-delay="2500"] {
+  --animation-delay-value: 2500ms;
+}
+
+[data-animation-delay="2600"] {
+  --animation-delay-value: 2600ms;
+}
+
+[data-animation-delay="2700"] {
+  --animation-delay-value: 2700ms;
+}
+
+[data-animation-delay="2800"] {
+  --animation-delay-value: 2800ms;
+}
+
+[data-animation-delay="2900"] {
+  --animation-delay-value: 2900ms;
+}
+
+[data-animation-delay="3000"] {
+  --animation-delay-value: 3000ms;
+}
+
+[data-animation-delay="3100"] {
+  --animation-delay-value: 3100ms;
+}
+
+[data-animation-delay="3200"] {
+  --animation-delay-value: 3200ms;
+}
+
+[data-animation-delay="3300"] {
+  --animation-delay-value: 3300ms;
+}
+
+[data-animation-delay="3400"] {
+  --animation-delay-value: 3400ms;
+}
+
+[data-animation-delay="3500"] {
+  --animation-delay-value: 3500ms;
+}
+
+[data-animation-delay="3600"] {
+  --animation-delay-value: 3600ms;
+}
+
+[data-animation-delay="3700"] {
+  --animation-delay-value: 3700ms;
+}
+
+[data-animation-delay="3800"] {
+  --animation-delay-value: 3800ms;
+}
+
+[data-animation-delay="3900"] {
+  --animation-delay-value: 3900ms;
+}
+
+[data-animation-delay="4000"] {
+  --animation-delay-value: 4000ms;
+}
+
+[data-animation-delay="4100"] {
+  --animation-delay-value: 4100ms;
+}
+
+[data-animation-delay="4200"] {
+  --animation-delay-value: 4200ms;
+}
+
+[data-animation-delay="4300"] {
+  --animation-delay-value: 4300ms;
+}
+
+[data-animation-delay="4400"] {
+  --animation-delay-value: 4400ms;
+}
+
+[data-animation-delay="4500"] {
+  --animation-delay-value: 4500ms;
+}
+
+[data-animation-delay="4600"] {
+  --animation-delay-value: 4600ms;
+}
+
+[data-animation-delay="4700"] {
+  --animation-delay-value: 4700ms;
+}
+
+[data-animation-delay="4800"] {
+  --animation-delay-value: 4800ms;
+}
+
+[data-animation-delay="4900"] {
+  --animation-delay-value: 4900ms;
+}
+
+[data-animation-delay="5000"] {
+  --animation-delay-value: 5000ms;
+}
+
+[data-animation-delay="5100"] {
+  --animation-delay-value: 5100ms;
+}
+
+[data-animation-delay="5200"] {
+  --animation-delay-value: 5200ms;
+}
+
+[data-animation-delay="5300"] {
+  --animation-delay-value: 5300ms;
+}
+
+[data-animation-delay="5400"] {
+  --animation-delay-value: 5400ms;
+}
+
+[data-animation-delay="5500"] {
+  --animation-delay-value: 5500ms;
+}
+
+[data-animation-delay="5600"] {
+  --animation-delay-value: 5600ms;
+}
+
+[data-animation-delay="5700"] {
+  --animation-delay-value: 5700ms;
+}
+
+[data-animation-delay="5800"] {
+  --animation-delay-value: 5800ms;
+}
+
+[data-animation-delay="5900"] {
+  --animation-delay-value: 5900ms;
+}
+
+[data-animation-delay="6000"] {
+  --animation-delay-value: 6000ms;
+}

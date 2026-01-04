@@ -1,9 +1,0 @@
-.error {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  color: #f87171;
-  z-index: 20;
-}
-

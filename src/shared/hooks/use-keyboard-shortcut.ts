@@ -51,4 +51,3 @@ export function useKeyboardShortcut(
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [key, callback, options.ctrlKey, options.metaKey, options.shiftKey, options.altKey]);
 }
-
