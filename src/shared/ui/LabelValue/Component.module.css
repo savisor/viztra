@@ -1,0 +1,55 @@
+.labelValue {
+  background-color: var(--surface-primary);
+  border: 1px solid var(--surface-secondary);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  border-radius: 0;
+}
+
+.label {
+  font-size: var(--font-size-xs);
+  color: var(--text-tertiary);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.4;
+}
+
+.value {
+  font-size: var(--font-size-lg);
+  color: var(--text-primary);
+  font-weight: 600;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "SF Mono", "Monaco", "Inconsolata", "Roboto Mono", "Courier New", monospace;
+  letter-spacing: -0.01em;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badgeSuccess {
+  background-color: var(--color-success);
+  color: white;
+}
+
+.badgeError {
+  background-color: var(--color-error);
+  color: white;
+}
+

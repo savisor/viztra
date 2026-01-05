@@ -39,6 +39,12 @@ pub fn get_symbol_cache_dir(symbol: &str) -> Result<PathBuf, AppError> {
     Ok(asset_dir.join(symbol))
 }
 
+/// Gets the deals cache directory
+pub fn get_deals_cache_dir() -> Result<PathBuf, AppError> {
+    let cache_dir = get_cache_dir()?;
+    Ok(cache_dir.join("deals"))
+}
+
 /// Ensures the cache directory exists
 pub fn ensure_cache_dir(path: &Path) -> Result<(), AppError> {
     std::fs::create_dir_all(path)

@@ -1,0 +1,2 @@
+export { SettingsModal } from "./Component";
+

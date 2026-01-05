@@ -83,7 +83,7 @@
 .button-primary {
   background-color: var(--surface-primary);
   border-color: transparent;
-  color: var(--text-inverse);
+  color: var(--text-primary);
 }
 
 .button-primary::before {
@@ -94,7 +94,7 @@
   background-color: var(--surface-primary-hover);
   border-color: transparent;
   box-shadow: none;
-  color: var(--text-inverse);
+  color: var(--text-primary);
 }
 
 .button-primary:active {

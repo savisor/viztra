@@ -147,22 +147,22 @@
   --background-active: #252525;
 
   /* surface colors - primary */
-  --surface-primary: #ffffff;
-  --surface-primary-hover: #f6f6f6;
-  --surface-primary-active: #ffffff;
-  --surface-primary-disabled: #f0f0f0;
+  --surface-primary: #1a1a1a;
+  --surface-primary-hover: #252525;
+  --surface-primary-active: #2a2a2a;
+  --surface-primary-disabled: #151515;
 
   /* surface colors - secondary */
-  --surface-secondary: #f8f9fa;
-  --surface-secondary-hover: #e9ecef;
-  --surface-secondary-active: #f8f9fa;
-  --surface-secondary-disabled: #e2e6ea;
+  --surface-secondary: #252525;
+  --surface-secondary-hover: #2a2a2a;
+  --surface-secondary-active: #252525;
+  --surface-secondary-disabled: #1f1f1f;
 
   /* surface colors - tertiary */
-  --surface-tertiary: #e9ecef;
-  --surface-tertiary-hover: #dee2e6;
-  --surface-tertiary-active: #e9ecef;
-  --surface-tertiary-disabled: #d1d6db;
+  --surface-tertiary: #2a2a2a;
+  --surface-tertiary-hover: #333333;
+  --surface-tertiary-active: #2a2a2a;
+  --surface-tertiary-disabled: #252525;
 
   /* typography - font sizes */
   --font-size-xs: 0.5rem; /* 8px */

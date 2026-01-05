@@ -1,0 +1,152 @@
+.container {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-gutter: stable;
+}
+
+/* Always show scrollbar, not just on hover */
+.container::-webkit-scrollbar {
+  height: 12px;
+  -webkit-appearance: none;
+}
+
+.container::-webkit-scrollbar-track {
+  background-color: var(--background-active);
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: var(--surface-tertiary);
+  border-radius: 6px;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+  background-color: var(--surface-tertiary-hover);
+}
+
+/* Firefox - scrollbars are always visible by default, but ensure consistent styling */
+.container {
+  scrollbar-width: thin;
+  scrollbar-color: var(--surface-tertiary) var(--background-active);
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: fit-content;
+}
+
+.headerRow {
+  display: grid;
+  grid-template-columns: 
+    minmax(100px, 1fr)  /* Position ID */
+    minmax(100px, 1fr)  /* Order */
+    minmax(160px, 1.2fr) /* Time */
+    minmax(90px, 0.8fr)  /* Symbol */
+    minmax(90px, 0.9fr)  /* Volume */
+    minmax(100px, 1fr)   /* Price */
+    minmax(110px, 1fr)   /* Commission */
+    minmax(90px, 0.9fr)  /* Swap */
+    minmax(100px, 1fr)   /* Profit */
+    minmax(90px, 0.9fr)  /* Fee */
+    minmax(120px, 1.5fr); /* Comment */
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--background-active);
+  border-bottom: 1px solid var(--surface-tertiary);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 
+    minmax(100px, 1fr)  /* Position ID */
+    minmax(100px, 1fr)  /* Order */
+    minmax(160px, 1.2fr) /* Time */
+    minmax(90px, 0.8fr)  /* Symbol */
+    minmax(90px, 0.9fr)  /* Volume */
+    minmax(100px, 1fr)   /* Price */
+    minmax(110px, 1fr)   /* Commission */
+    minmax(90px, 0.9fr)  /* Swap */
+    minmax(100px, 1fr)   /* Profit */
+    minmax(90px, 0.9fr)  /* Fee */
+    minmax(120px, 1.5fr); /* Comment */
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--background-active);
+  font-size: var(--font-size-base);
+  color: var(--text-primary);
+  transition: background-color 0.15s;
+}
+
+.row:hover {
+  background-color: var(--background-hover);
+}
+
+.row:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.row:nth-child(even):hover {
+  background-color: var(--background-hover);
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: var(--space-2) 0;
+}
+
+/* Text columns - left-aligned */
+.cell.text {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+/* Numeric columns - right-aligned */
+.cell.number {
+  font-family: "JetBrains Mono", "Consolas", "Monaco", "Courier New", monospace;
+  justify-content: flex-end;
+  text-align: right;
+  font-size: var(--font-size-sm);
+}
+
+/* Time column - right-aligned */
+.cell.time {
+  justify-content: flex-end;
+  text-align: right;
+  font-family: "JetBrains Mono", "Consolas", "Monaco", "Courier New", monospace;
+  font-size: var(--font-size-sm);
+}
+
+.cell.profit {
+  color: var(--color-success);
+}
+
+.cell.loss {
+  color: var(--color-error);
+}
+
+.loading,
+.error,
+.empty {
+  padding: var(--space-8);
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: var(--font-size-lg);
+}
+
+.error {
+  color: var(--color-error);
+}
+

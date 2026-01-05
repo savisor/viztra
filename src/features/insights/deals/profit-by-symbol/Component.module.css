@@ -1,0 +1,106 @@
+.container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: fit-content;
+}
+
+.headerRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--background-active);
+  border-bottom: 1px solid var(--surface-tertiary);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.headerCell {
+  display: flex;
+  align-items: center;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--background-active);
+  font-size: var(--font-size-base);
+  color: var(--text-primary);
+  transition: background-color 0.15s;
+}
+
+.row:hover {
+  background-color: var(--background-hover);
+}
+
+.row:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.row:nth-child(even):hover {
+  background-color: var(--background-hover);
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: var(--space-2) 0;
+}
+
+.cell.number {
+  font-family: "JetBrains Mono", "Consolas", "Monaco", "Courier New", monospace;
+  justify-content: flex-end;
+  text-align: right;
+  font-size: var(--font-size-sm);
+}
+
+.cell.negative {
+  color: var(--color-error);
+}
+
+.loading,
+.error,
+.empty {
+  padding: var(--space-8);
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: var(--font-size-lg);
+}
+
+.error {
+  color: var(--color-error);
+}
+
+.retryButton {
+  margin-top: var(--space-4);
+  padding: var(--space-2) var(--space-4);
+  background-color: var(--surface-primary);
+  border: 1px solid var(--surface-tertiary);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  cursor: pointer;
+  font-size: var(--font-size-sm);
+  transition: background-color 0.15s;
+}
+
+.retryButton:hover {
+  background-color: var(--surface-primary-hover);
+}
+

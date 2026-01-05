@@ -1,0 +1,68 @@
+.menu {
+  position: fixed;
+  top: var(--space-2);
+  right: var(--space-2);
+  z-index: 1000;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.button:focus {
+  outline: 2px solid var(--color-info);
+  outline-offset: 2px;
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.items {
+  position: absolute;
+  top: calc(100% + var(--space-1));
+  right: 0;
+  min-width: 8rem;
+  background-color: var(--surface-primary);
+  border: 1px solid var(--surface-tertiary);
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: var(--space-1);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.item {
+  width: 100%;
+  text-align: left;
+  padding: var(--space-2) var(--space-3);
+  border: none;
+  background-color: transparent;
+  color: var(--text-primary);
+  font-size: var(--font-size-lg);
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: background-color 0.15s;
+}
+
+.itemFocus {
+  background-color: var(--background-hover);
+}
+

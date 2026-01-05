@@ -16,6 +16,7 @@ export interface ContainerProps {
   gap?: Gap;
   divider?: boolean;
   className?: string;
+  style?: React.CSSProperties;
 }
 
 export const Container = ({
@@ -28,6 +29,7 @@ export const Container = ({
   gap = "0",
   divider = false,
   className,
+  style,
 }: ContainerProps) => {
   return (
     <div
@@ -40,6 +42,7 @@ export const Container = ({
       data-gap={gap}
       data-direction="vertical"
       data-divider={divider}
+      style={style}
     >
       {children}
     </div>

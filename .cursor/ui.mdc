@@ -1,0 +1,90 @@
+---
+alwaysApply: true
+---
+
+# UI/UX Rules for Wall Street-Style Trading Desktop Platform
+
+## Rule 1: Extreme Layout Modularity
+Implement independent panels for charts, order books, and watchlists that support drag-and-drop with snap-to-grid for precise alignment in multi-monitor layouts. Each module must allow zero-overlap visuals and floating or fixed anchoring, saving profiles by asset class (equities, FX, futures) with instant restoration on login. Limit the main canvas to 90% usable space, hiding unnecessary borders to maximize data density.
+
+**Implementation Guidelines:**
+- Use a grid-based layout system with configurable snap points
+- Store layout profiles as JSON configuration files
+- Implement panel state persistence (position, size, visibility)
+- Support floating and docked panel modes
+- Enable profile switching via keyboard shortcuts (Ctrl+1-9)
+
+## Rule 2: Keyboard Input Optimization
+Prioritize numeric shortcuts (1-0 for main functions) and single-character commands like "GP<GO>" for charts or "NEWS<GO>" for headlines, reducing latency to <50ms per action. Integrate recordable live macros and predictive auto-complete for tickers with wildcard support (e.g., AAPL*, ^DJI). Surpass mouse clicks in HFT workflows, with customizable bindings via JSON config for advanced traders.
+
+**Implementation Guidelines:**
+- Map numeric keys (1-9, 0) to primary functions
+- Implement command palette with <GO> pattern for quick actions
+- Add macro recording functionality with JSON export/import
+- Provide ticker autocomplete with wildcard matching
+- Ensure all keyboard actions complete in <50ms
+
+## Rule 3: Minimalist Professional Visual Styles
+Use dark themes with minimum 4.5:1 contrast ratio (WCAG AA), monospaced fonts like Consolas or JetBrains Mono at 10-12pt for time & sales tapes and ladders. Apply subtle heatmaps only on deltas >1% (red #FF4136 for bid, green #2ECC40 for ask) with collapsible toolbars that free up space. Include high contrast mode for 12h+ sessions and precise grid ticks with hover precision for price levels.
+
+**Implementation Guidelines:**
+- Enforce WCAG AA contrast ratios (4.5:1 minimum)
+- Use monospaced fonts for all numerical data displays
+- Implement color-coded bid/ask visualizations with configurable thresholds
+- Create collapsible UI elements to maximize screen real estate
+- Provide high contrast mode toggle for extended trading sessions
+
+## Rule 4: Real-Time Data Presentation Hierarchy
+Place bid/ask stacks in foreground with 10-level depth, floating PnL pinned in upper-right corner, and risk metrics (VaR 95%, max drawdown) in hover-only badges to avoid visual clutter. Updates use animated diffs <50ms without full panel refreshes, supporting watchlists of 1000+ symbols with live regex filters (e.g., volume>1M && rsi<30). Prioritize delta metrics over absolute values in dynamic tables.
+
+**Implementation Guidelines:**
+- Render 10-level order book depth by default
+- Pin PnL display to viewport (position: fixed, top-right)
+- Use hover tooltips for secondary metrics to reduce clutter
+- Implement diff-based updates (don't re-render entire components)
+- Support complex filter expressions with regex and logical operators
+- Highlight delta/change values over static numbers
+
+## Rule 5: Progressive Onboarding and Robust Error Handling
+Apply contextual tooltips with real examples on hover (e.g., "Drag here for OCO") and unlimited undo (stack of 50 actions) for layout rearrangements. Integrate push alerts in dashboard with granular snooze (5min, 15min, 1h) parsing headlines from Reuters/Bloomberg via API. Validate changes in real-time with preview modal, balancing steep learning curve with >95% retention for institutional users.
+
+**Implementation Guidelines:**
+- Add contextual tooltips with actionable examples
+- Implement undo/redo stack (minimum 50 actions)
+- Create alert system with granular snooze options
+- Integrate news API feeds (Reuters/Bloomberg) with parsing
+- Use preview modals for destructive or complex actions
+- Design onboarding flows for institutional users (concise, powerful)
+
+## Rule 6: Persistent Multi-Profile Customization
+Support named workspaces by strategy (Scalping, Swing, HFT) with hotkeys for switching (Ctrl+1..9), syncing via cloud with merge conflict resolution. Allow custom indicators in drag zones with auto-layout based on complexity (1-chart simple, 6-chart complex). Export/import themes as CSS variables for sharing in quant teams.
+
+**Implementation Guidelines:**
+- Create workspace system with named profiles
+- Implement hotkey switching between workspaces (Ctrl+1-9)
+- Add cloud sync with conflict resolution UI
+- Support custom indicator placement via drag-and-drop
+- Auto-adjust layouts based on indicator complexity
+- Export themes as CSS custom properties for team sharing
+
+## Rule 7: Visual Performance and Zero Latency
+Guarantee 60fps on updates of 1000+ ticks/sec with virtual scrolling in tables and canvas-based rendering for charts (no SVG for scale). Implement LOD (Level of Detail) for zoom out: aggregate ticks >1min in monthly view. Hide non-focused data with lazy loading, maintaining <16ms frame time even in 8K multi-monitor setups.
+
+**Implementation Guidelines:**
+- Use canvas-based rendering for high-frequency chart updates (avoid SVG)
+- Implement virtual scrolling for large data tables (>100 rows visible)
+- Apply LOD (Level of Detail) based on zoom level/timeframe
+- Use lazy loading for off-screen or collapsed panels
+- Target <16ms frame time (60fps) for all animations
+- Optimize for 8K multi-monitor configurations
+
+## Rule 8: News and Contextual Events Integration
+Embed parsed headlines as ribbon overlays on main charts, clickable to full article with sentiment score (VADER +/-0.5). Inline economic calendar with impact levels (high=red, medium=yellow) and countdown timers for NFP/FOMC. Correlate news events with price action via auto-drawn vertical lines across all open timeframes.
+
+**Implementation Guidelines:**
+- Overlay news ribbons on chart areas (non-intrusive design)
+- Link headlines to full articles with sentiment analysis
+- Display economic calendar inline with color-coded impact levels
+- Add countdown timers for major events (NFP, FOMC, etc.)
+- Draw vertical reference lines on charts for correlated news events
+- Sync event markers across all visible timeframes

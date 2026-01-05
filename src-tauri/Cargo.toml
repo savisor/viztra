@@ -28,3 +28,5 @@ zip = "0.6"
 dirs = "5.0"
 futures = "0.3"
 polars = { version = "0.40", features = ["lazy", "parquet"] }
+jsonschema = "0.18"
+schemars = { version = "1", features = ["derive"] }

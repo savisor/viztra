@@ -1,0 +1,219 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dropZone {
+  border: 2px dashed #d1d5db;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.2s;
+  background-color: #f9fafb;
+  cursor: pointer;
+}
+
+.dropZone:hover {
+  border-color: #3b82f6;
+  background-color: #eff6ff;
+}
+
+.dropZoneActive {
+  border-color: #3b82f6;
+  background-color: #dbeafe;
+}
+
+.fileInput {
+  display: none;
+}
+
+.dropZoneLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+.dropZoneIcon {
+  color: #6b7280;
+  transition: color 0.2s;
+}
+
+.dropZone:hover .dropZoneIcon,
+.dropZoneActive .dropZoneIcon {
+  color: #3b82f6;
+}
+
+.dropZoneText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  color: #374151;
+}
+
+.dropZoneText strong {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.dropZoneText span {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.filesList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filesListHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+.clearButton {
+  background: none;
+  border: none;
+  color: #3b82f6;
+  cursor: pointer;
+  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s;
+}
+
+.clearButton:hover {
+  background-color: #eff6ff;
+}
+
+.filesListItems {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  padding: 0.5rem;
+  background-color: #f9fafb;
+}
+
+.filesListItem {
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.filesListItem:last-child {
+  border-bottom: none;
+}
+
+.importButton {
+  padding: 0.75rem 1.5rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%;
+}
+
+.importButton:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+.importButton:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.resultMessage {
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.resultSuccess {
+  background-color: #d1fae5;
+  color: #065f46;
+  border: 1px solid #10b981;
+}
+
+.resultError {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #ef4444;
+}
+
+.fileResults {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  padding: 0.5rem;
+  background-color: #f9fafb;
+}
+
+.fileResult {
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  border: 1px solid;
+}
+
+.fileResultSuccess {
+  background-color: #f0fdf4;
+  border-color: #86efac;
+}
+
+.fileResultError {
+  background-color: #fef2f2;
+  border-color: #fca5a5;
+}
+
+.fileResultName {
+  font-weight: 500;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.fileResultSuccess .fileResultName {
+  color: #065f46;
+}
+
+.fileResultError .fileResultName {
+  color: #991b1b;
+}
+
+.fileResultMessage {
+  font-size: 0.8125rem;
+  line-height: 1.4;
+}
+
+.fileResultSuccess .fileResultMessage {
+  color: #047857;
+}
+
+.fileResultError .fileResultMessage {
+  color: #dc2626;
+}
+

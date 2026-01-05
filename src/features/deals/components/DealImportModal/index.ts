@@ -1,0 +1,2 @@
+export { DealImportModal } from "./Component";
+
