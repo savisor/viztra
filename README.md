@@ -127,9 +127,18 @@ pnpm tauri build
 
 ## License
 
-MIT License - See [LICENSE](LICENSE) file for details.
+Viztra was originally created as an **open source and free tool for individual traders**. The GPLv3 license was chosen based on this premise, ensuring that the software remains freely available to the trading community while requiring that improvements and modifications are shared back with the community.
 
-You are free to use, modify, and distribute this software for your own analysis and projects.
+This project is distributed under the **GPLv3 license** for free use with the obligation to share modifications. See [LICENSE](LICENSE) file for details.
+
+### Dual Licensing Model
+
+Viztra uses a dual licensing model: the same codebase is available under two different licenses depending on the type of use:
+
+- **GPLv3 (Open Source)**: Free use for open-source projects with the requirement to share modifications under the same license
+- **Commercial License**: Available for fintech companies and organizations that want to integrate Viztra into proprietary products without having to release their changes or their own code
+
+For proprietary integrations or use without GPL obligations, commercial licenses are offered to companies (especially fintech). Please contact us for commercial licensing inquiries.
 
 ## Third-Party Licenses
 
